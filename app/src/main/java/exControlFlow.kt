@@ -79,13 +79,15 @@ fun main () {
         for (getWords in words) {
             //println(getWords)
 
-            println(
-                getWords.startsWith("li")
-            )
+            if (getWords.startsWith("l")) {
+                println(getWords)
+            }
         }
     }
     ex4()
 }
+
+
 
 
 
