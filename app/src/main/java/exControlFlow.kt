@@ -18,6 +18,9 @@ fun main () {
     }
     ex1()
 
+    println("siguiente ejercicio aqui")
+    println("---------------------------------------------------------------------------------------")
+
 //Tienes un programa que cuenta porciones de pizza hasta que quede una pizza entera con 8 porciones.
 //Refactorice este programa de dos maneras:
 //loop while and do-while
@@ -35,14 +38,22 @@ fun main () {
     }
     ex2_1()
 
+    println("---------------------------------------")
 
     fun ex2_2 () {
-        var pizzaSlices = 0
 
+        var pizzaSlices = 1
 
+        do {
+            println("There's only $pizzaSlices slice/s of pizza :(")
+            pizzaSlices++
+        } while (pizzaSlices < 8)
+
+        println("There are $pizzaSlices slices of pizza. Hooray! We have a whole pizza! :D")
     }
     ex2_2()
 }
+
 
 
 
