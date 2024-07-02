@@ -42,7 +42,7 @@ fun main () {
 
     fun ex2_2 () {
 
-        var pizzaSlices = 1
+        var pizzaSlices = 10
 
         do {
             println("There's only $pizzaSlices slice/s of pizza :(")
@@ -69,9 +69,9 @@ fun main () {
         }
     }
     //ex3()
-    println("----------------------------------------------------------------")
 
     //You have a list of words. Use for and if to print only the words that start with the letter l.
+    println("----------------------------------------------------------------")
 
     fun ex4() {
         val words : MutableList<String> = mutableListOf("dinosaur", "limousine", "magazine", "language")

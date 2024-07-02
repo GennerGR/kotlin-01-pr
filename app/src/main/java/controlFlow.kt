@@ -66,6 +66,7 @@ fun main () {
     while (cakesEaten < 3) {
         println("Eat a cake")
         cakesEaten++
+
     }
 
     do {
