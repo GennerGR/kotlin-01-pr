@@ -43,7 +43,7 @@ fun main() {
 
     var funcionfl = {text : String, other : Int -> text.uppercase() + other}
 
-    print(funcionfl("hola ", 5))
+    println(funcionfl("hola ", 5))
     println("--------------------------------------------")
 
     passToAnotherFunction()
