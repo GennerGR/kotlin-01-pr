@@ -62,6 +62,15 @@ fun printMap () {
 // Function types
 var upperCaseString: (String) -> String = {text -> text.uppercase()}
 
+//
+
+fun pepe(a: Int, b :Int) :Int {
+    var peee = a + b
+    return peee
+}
+
+
+
 // MAIN FUNCTION
 
 fun main() {
@@ -91,6 +100,8 @@ fun main() {
 
     printMap()
     println("--------------------------------------------")
+
+    println(pepe(2, 3))
 
 
     println(upperCaseString("text"))
