@@ -8,13 +8,14 @@ class PersonaTwo(val name: String, var age: Int) {
 }
 
 
+
 fun main () {
 
-    var persona = Persona("Ariadna", 21)
+    var persona = Persona("Ariadna", 19)
     println("nombre: ${persona.name}, edad: ${persona.age}")
 
-    var personaTwo = PersonaTwo("Genner", 17)
-    personaTwo.saludar()
+    var personaTwo = PersonaTwo("Genner", 17);
+    personaTwo.saludar();
 }
 
 
