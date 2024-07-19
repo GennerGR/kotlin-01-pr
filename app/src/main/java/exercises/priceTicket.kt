@@ -22,3 +22,8 @@ fun ticketPrice(age: Int, isMonday: Boolean): Int {
 }
 
 
+
+
+
+
+
