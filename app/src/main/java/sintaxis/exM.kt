@@ -1,4 +1,4 @@
-
+package sintaxis
 
 
 fun main() {

@@ -1,3 +1,5 @@
+package sintaxis
+
 var ageAll = 19
 val nameClient = "Rodrigo"
 var clientes = 8

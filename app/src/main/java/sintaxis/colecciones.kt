@@ -1,3 +1,5 @@
+package sintaxis
+
 fun main () {
     println(mapita)
     println(list1)

@@ -1,4 +1,4 @@
-// Importaciones
+package sintaxis// Importaciones
 import kotlin.math.PI
 
 // Var's
@@ -43,16 +43,16 @@ fun principalTwo () {
 
 fun passToAnotherFunction () {
 
-    var positive = numberList.filter{x -> x > 0}
-    var negative = numberList.filter{x -> x < 0}
+    var positive = numberList.filter{ x -> x > 0}
+    var negative = numberList.filter{ x -> x < 0}
     println("numeros postivos $positive numeros negativos $negative")
 
 }
 
 // Map
 
-val doubled = numberList.map{x -> x * 2}
-val tripled = numberList.map{x -> x *3}
+val doubled = numberList.map{ x -> x * 2}
+val tripled = numberList.map{ x -> x *3}
 
 fun printMap () {
     println(doubled)

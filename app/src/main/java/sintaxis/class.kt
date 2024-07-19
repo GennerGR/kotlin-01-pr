@@ -1,3 +1,5 @@
+package sintaxis
+
 class Persona(val name: String, var age: Int)
 
 

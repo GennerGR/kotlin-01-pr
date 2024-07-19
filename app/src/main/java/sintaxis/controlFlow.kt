@@ -1,3 +1,5 @@
+package sintaxis
+
 fun main () {
 
     var d : Int
