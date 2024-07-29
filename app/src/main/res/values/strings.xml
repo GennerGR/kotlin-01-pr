@@ -1,3 +1,6 @@
 <resources>
-    <string name="app_name">kotlin_1</string>
+    <string name="app_name">Mai apliqueishon</string>
+    <string name="btnName">PULSAME</string>
+    <string name="etName">Ingresa tu nombre</string>
+    <string name="text_01">ESCRIBE TU NOMBRE</string>
 </resources>
