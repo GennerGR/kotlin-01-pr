@@ -3,4 +3,7 @@
     <string name="btnName">PULSAME</string>
     <string name="etName">Ingresa tu nombre</string>
     <string name="text_01">ESCRIBE TU NOMBRE</string>
+    <string name="btnToFirsApp">FIRST-APP</string>
+    <string name="btnToSecondApp">SECOND-APP</string>
+    <string name="btnToTreeApp">TREE-APP</string>
 </resources>

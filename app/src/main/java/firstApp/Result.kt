@@ -25,3 +25,5 @@ class Result : AppCompatActivity() {
         tvResult.text = "Hola $name"
     }
 }
+
+
