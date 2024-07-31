@@ -1,5 +1,6 @@
 package com.example.kotlin_1
 
+import IMCapp.IMCCalculatorActivity
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
@@ -19,23 +20,25 @@ class MenuActivity : AppCompatActivity() {
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
+
+
         }
 
         val btnFirstApp = findViewById<Button>(R.id.btnToFisrtApp)
         val btnSecondApp = findViewById<Button>(R.id.btnToSecondApp)
         val btnTreeApp = findViewById<Button>(R.id.btnToTreeApp)
 
-        btnSecondApp.setOnClickListener {
+        btnFirstApp.setOnClickListener{ navigateToFirstApp() }
+        btnSecondApp.setOnClickListener{ navigateToSecondApp() }
+    }
 
-        }
+    private fun navigateToFirstApp() {
+        val intent = Intent(this, FirstAppActivity::class.java)
+        startActivity(intent)
+    }
 
-        btnTreeApp.setOnClickListener {
-
-        }
-
-        btnFirstApp.setOnClickListener {
-            val intent = Intent(this, FirstAppActivity::class.java)
-            startActivity(intent)
-        }
+    private fun navigateToSecondApp() {
+        val intent = Intent(this, IMCCalculatorActivity::class.java)
+        startActivity(intent)
     }
 }

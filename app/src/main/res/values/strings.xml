@@ -1,5 +1,8 @@
 <resources>
     <string name="app_name">Mai apliqueishon</string>
+    <string name="app_1">Saludo</string>
+    <string name="app_2">IMCCalculator</string>
+    <string name="app_3">ToDo</string>
     <string name="btnName">PULSAME</string>
     <string name="etName">Ingresa tu nombre</string>
     <string name="text_01">ESCRIBE TU NOMBRE</string>
