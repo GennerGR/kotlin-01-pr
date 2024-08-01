@@ -12,4 +12,6 @@
 
     <string name="male">Hombre</string>
     <string name="female">Mujer</string>
+
+    <string name="img_description">Description</string>
 </resources>
