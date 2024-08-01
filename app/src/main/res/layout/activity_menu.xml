@@ -5,14 +5,16 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/background_app"
+    android:fitsSystemWindows="true"
     tools:context=".MenuActivity">
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/GuideLineMitad"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintGuide_percent="0.5"
-        android:orientation="horizontal"/>
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
 
     <Button
         android:id="@+id/btnToFisrtApp"
@@ -23,11 +25,11 @@
         android:text="@string/btnToFirsApp"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintVertical_chainStyle="packed"
         app:layout_constraintBottom_toTopOf="@+id/btnToSecondApp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
 
     <Button
         android:id="@+id/btnToSecondApp"
@@ -36,13 +38,13 @@
         android:layout_margin="16dp"
         android:padding="10dp"
         android:text="@string/btnToSecondApp"
-        app:layout_constraintVertical_chainStyle="packed"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/btnToTreeApp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnToFisrtApp" />
+        app:layout_constraintTop_toBottomOf="@+id/btnToFisrtApp"
+        app:layout_constraintVertical_chainStyle="packed" />
 
     <Button
         android:id="@+id/btnToTreeApp"
@@ -51,12 +53,12 @@
         android:layout_margin="16dp"
         android:padding="10dp"
         android:text="@string/btnToTreeApp"
-        app:layout_constraintVertical_chainStyle="packed"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/GuideLineMitad"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnToSecondApp" />
+        app:layout_constraintTop_toBottomOf="@+id/btnToSecondApp"
+        app:layout_constraintVertical_chainStyle="packed" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -9,4 +9,7 @@
     <string name="btnToFirsApp">FIRST-APP</string>
     <string name="btnToSecondApp">SECOND-APP</string>
     <string name="btnToTreeApp">TREE-APP</string>
+
+    <string name="male">Hombre</string>
+    <string name="female">Mujer</string>
 </resources>
