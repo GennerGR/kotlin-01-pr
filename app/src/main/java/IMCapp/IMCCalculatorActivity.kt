@@ -49,6 +49,8 @@ class IMCCalculatorActivity : AppCompatActivity() {
         }
     }
 
+    //Solucionar bug de cambio selected en los btns
+
     private fun changeGender() {
         isMaleSelected = !isMaleSelected
         isFemaleSelected = !isFemaleSelected
