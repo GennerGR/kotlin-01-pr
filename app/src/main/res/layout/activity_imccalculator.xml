@@ -134,20 +134,27 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cdWeight"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="150dp"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="32dp"
+        app:cardBackgroundColor="@color/background_component"
+        android:layout_marginEnd="16dp"
+        app:cardCornerRadius="16dp"
         app:layout_constraintEnd_toStartOf="@+id/cdAge"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cvHeight">
 
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cdAge"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="150dp"
-        app:layout_constraintStart_toEndOf="@+id/cdWeight"
+        android:layout_marginTop="32dp"
+        app:cardBackgroundColor="@color/background_component"
+        app:cardCornerRadius="16dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cdWeight"
         app:layout_constraintTop_toBottomOf="@+id/cvHeight">
 
     </androidx.cardview.widget.CardView>
