@@ -1,6 +1,9 @@
 package IMCapp
 
+import android.annotation.SuppressLint
+import android.icu.text.DecimalFormat
 import android.os.Bundle
+import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.cardview.widget.CardView
@@ -8,6 +11,7 @@ import androidx.core.content.ContextCompat
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.kotlin_1.R
+import com.google.android.material.slider.RangeSlider
 
 class IMCCalculatorActivity : AppCompatActivity() {
 
@@ -16,6 +20,9 @@ class IMCCalculatorActivity : AppCompatActivity() {
 
     private lateinit var viewMale: CardView
     private lateinit var viewFemale: CardView
+    private lateinit var rsHeight: RangeSlider
+    private lateinit var tvHeight: TextView
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -36,8 +43,11 @@ class IMCCalculatorActivity : AppCompatActivity() {
     private fun initComponents() {
         viewMale = findViewById(R.id.viewMale)
         viewFemale = findViewById(R.id.viewFemale)
+        rsHeight = findViewById(R.id.rsHeight)
+        tvHeight = findViewById(R.id.tvHeight)
     }
 
+    @SuppressLint("SetTextI18n")
     private fun initListeners() {
         viewMale.setOnClickListener {
             changeGender()
@@ -46,6 +56,11 @@ class IMCCalculatorActivity : AppCompatActivity() {
         viewFemale.setOnClickListener {
             changeGender()
             setGenderColor()
+        }
+        rsHeight.addOnChangeListener { _, value, _ ->
+            val df = DecimalFormat("#.##")
+            val result = df.format(value)
+            tvHeight.text = "$result cm"
         }
     }
 

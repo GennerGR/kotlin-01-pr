@@ -14,4 +14,7 @@
     <string name="female">Mujer</string>
 
     <string name="img_description">Description</string>
+
+    <string name="height">Altura</string>
+    <string name="heightCm">120 CM</string>
 </resources>
