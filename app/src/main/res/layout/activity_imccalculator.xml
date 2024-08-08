@@ -8,7 +8,7 @@
     android:background="@color/background_app"
     android:paddingHorizontal="16dp"
     android:paddingVertical="32dp"
-    android:paddingBottom="32dp"
+    android:paddingBottom="40dp"
     android:fitsSystemWindows="true"
     tools:context="IMCapp.IMCCalculatorActivity">
 
