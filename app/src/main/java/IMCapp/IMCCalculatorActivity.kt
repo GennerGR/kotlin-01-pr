@@ -3,6 +3,7 @@ package IMCapp
 import android.annotation.SuppressLint
 import android.icu.text.DecimalFormat
 import android.os.Bundle
+import android.view.View
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -48,6 +49,7 @@ class IMCCalculatorActivity : AppCompatActivity() {
     }
 
     @SuppressLint("SetTextI18n")
+
     private fun initListeners() {
         viewMale.setOnClickListener {
             changeGender()
