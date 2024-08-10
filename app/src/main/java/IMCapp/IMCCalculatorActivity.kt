@@ -12,6 +12,7 @@ import androidx.core.content.ContextCompat
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.kotlin_1.R
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.android.material.slider.RangeSlider
 
 class IMCCalculatorActivity : AppCompatActivity() {
@@ -23,6 +24,10 @@ class IMCCalculatorActivity : AppCompatActivity() {
     private lateinit var viewFemale: CardView
     private lateinit var rsHeight: RangeSlider
     private lateinit var tvHeight: TextView
+    private lateinit var btnSubstractWeight: FloatingActionButton
+    private lateinit var btnPlusWeight: FloatingActionButton
+    private lateinit var tvWeight: TextView
+
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -46,6 +51,10 @@ class IMCCalculatorActivity : AppCompatActivity() {
         viewFemale = findViewById(R.id.viewFemale)
         rsHeight = findViewById(R.id.rsHeight)
         tvHeight = findViewById(R.id.tvHeight)
+        btnSubstractWeight = findViewById(R.id.btnSubstractWeight)
+        btnPlusWeight = findViewById(R.id.btnPlusWeight)
+        tvWeight = findViewById(R.id.tvWeight)
+
     }
 
     @SuppressLint("SetTextI18n")
