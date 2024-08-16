@@ -18,6 +18,8 @@
     <string name="height">Altura</string>
     <string name="heightCm">120 CM</string>
     <string name="weight">Peso</string>
+    <string name="age">Edad</string>
+    <string name="calculate">Calcular</string>
 
     <string name="contentDescription">Selecciona un rango de valores entre el mínimo y el máximo</string>
     <string name="descriptionPlusWeight">Subir peso</string>
