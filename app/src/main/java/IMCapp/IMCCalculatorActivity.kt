@@ -50,6 +50,7 @@ class IMCCalculatorActivity : AppCompatActivity() {
         initListeners()
         initUI()
 
+
     }
 
     private fun initComponents() {
